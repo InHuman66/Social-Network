@@ -1,0 +1,30 @@
+.profile {
+
+}
+
+.personalPhoto img{
+    width: 100px;
+    height: 100px;
+}
+.personalInfo {
+
+}
+.posts {
+
+}
+.banner object{
+    width: 100%;
+    height: 120px;
+    background-image: url("../../Materias/helpbox-contact.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.posts textarea{
+    background-color: #F0F0F0;
+    border: none;
+    width: 100%;
+    resize: none;
+}
+.posts button{
+    float: right;
+}

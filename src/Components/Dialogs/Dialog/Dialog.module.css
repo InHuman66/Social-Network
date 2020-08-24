@@ -1,0 +1,9 @@
+.message {
+    padding: 2x 0;
+}
+.message p{
+    padding-bottom: 15px;
+    background-color: #80EE99FF;
+    border-radius: 5px;
+    padding-left: 15px;
+}

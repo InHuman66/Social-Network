@@ -1,0 +1,21 @@
+.side_bar {
+    background-color: cornflowerblue;
+    border-radius: 7px;
+}
+.side_bar_position {
+
+}
+.button {
+    padding: 5px 10px;
+}
+.txt_s {
+    color: whitesmoke;
+
+}
+.active {
+    color: gold !important;
+}
+.txt_s:hover{
+    text-decoration: none;
+    color: coral;
+}

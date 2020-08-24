@@ -1,0 +1,9 @@
+.post object{
+    width: 40px;
+    height: 40px;
+    border-radius: 45px;
+    background-color: coral;
+}
+.post p{
+    margin-left: 20px;
+}
