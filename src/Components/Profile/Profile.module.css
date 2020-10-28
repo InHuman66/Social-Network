@@ -28,3 +28,12 @@
 .posts button{
     float: right;
 }
+.personalInfo span{
+    color: gray;
+    font-weight: 700;
+    font-size: 20px;
+}
+.personalInfo p{
+    max-width: 700px;
+    word-break: break-word;
+}

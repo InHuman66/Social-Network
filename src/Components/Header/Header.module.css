@@ -55,3 +55,12 @@
 .header_menu a:hover{
     color: coral;
 }
+.loginBlock {
+    display: flex;
+    align-items: center;
+}
+.loginBlock  a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: 800;
+}

@@ -2,13 +2,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from '../Profile.module.css';
 import Post from "../Post/Post";
-type PostType ={
-    like: number
-    massage: string
-    id: number
-}
+import { postType } from '../../../Redax/profileReducer';
+
 type PostTypeFunc ={
-    Post: Array<PostType>
+    Post: Array<postType>
     NewTextPost: string
     addPost: ()=>void
     postCheng: (text:string)=>void

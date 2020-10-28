@@ -1,0 +1,62 @@
+.userBlock {
+    padding-bottom: 20px;
+}
+.ImgFollowBlock img {
+    border-radius: 15%;
+    width: 75px;
+    height: 75px;
+}
+.ImgFollowBlock button{
+    width: 80px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: skyblue;
+    transition: background-color 0.2s ;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.ImgFollowBlock button:focus {
+    outline: none!important;
+}
+.ImgFollowBlock button:hover {
+    background-color: #007bff;
+}
+.ImgFollowBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentBlock {
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.personalInfoBlock {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.personalInfoBlock p,h1{
+    margin: 0;
+    color: gray;
+    font-weight: 700;
+
+}
+.personalInfoBlock h1{
+    font-size: 25px;
+
+}
+.description {
+    padding: 0 15px;
+}
+.description p{
+    margin-top: 25px;
+    margin-bottom: 0;
+    color: gray;
+    font-weight: 700;
+}
+.selectedPage {
+    font-weight: 700;
+}

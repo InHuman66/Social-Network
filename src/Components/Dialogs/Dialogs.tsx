@@ -2,18 +2,27 @@ import React, {ChangeEvent} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Dialog from "./Dialog/Dialog";
 import DialogList from "./DialogList/DialogList";
-import {ActionsTypes} from "../../Redax/AC-Types";
-import {addNewMassage, updateNewMessageTxt} from "../../Redax/dialogReducer";
 import classes from "./Dialogs.module.css";
+import { Redirect } from 'react-router-dom';
 
 
-const Dialogs: React.FC<{DialogsItems:Array<{name:string, id:number}>, Messages:Array<{message:string, id:number}>, NewTextMassage: string, MessageTxtChange: (text:string)=>void, NewMessage:()=>void}>=(props)=> {
+type DialogType ={
+    DialogsItems:Array<{name:string, id:number}>
+    Messages:Array<{message:string, id:number}>
+    NewTextMassage: string
+    MessageTxtChange: (text:string)=>void
+    NewMessage:()=>void
+    isAuth: boolean
+}
+
+const Dialogs: React.FC<DialogType>=(props)=> {
     let onMessageTxtChange = (e:ChangeEvent<HTMLTextAreaElement>)=> {
         props.MessageTxtChange(e.currentTarget.value);
     };
     let sendNewMessage = ()=>{
         props.NewMessage();
     }
+    if (!props.isAuth) return <Redirect to={'/login'}/>
     return (
         <div>
             <div className={'row'}>

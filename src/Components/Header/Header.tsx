@@ -2,8 +2,14 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import classes from './Header.module.css';
 import logo from '../../Materias/conversation.png'
+import {NavLink} from "react-router-dom";
 
-const Header=()=> {
+type HeaderType ={
+    login: string
+    isAuth: boolean
+}
+
+const Header:React.FC<HeaderType> = (props)=> {
     return (
         <div>
             <div className={'container'}>
@@ -20,17 +26,19 @@ const Header=()=> {
                             <input placeholder={"Search"}/>
                         </div>
                     </div>
-                    <div className={classes.header_menu + ' col col-5'}>
+                    <div className={classes.header_menu + ' col col-4'}>
                         <a href={'#'}>Home</a>
                         <a href={'#'}>Newsfeed</a>
-                        <a href={'#'}>Timeline</a>
                         <a href={'#'}>All&nbsp;Pages</a>
                         <a href={'#'}>Contact</a>
+                    </div>
+                    <div className={classes.loginBlock + ' col col-1'}>
+                        { props.isAuth ? <NavLink to={'/'}>{props.login}</NavLink>: <NavLink to={'/login'}>Login</NavLink> }
                     </div>
                 </div>
             </div>
         </div>
     );
-};
+}
 
 export default Header;
